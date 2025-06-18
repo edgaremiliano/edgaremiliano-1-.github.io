@@ -1,0 +1,1037 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(css/animate.min.css);
+@import url(css/normalize.css);
+@import url(css/icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(css/meanmenu.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/swiper.min.css);
+@import url(css/slick.css);
+@import url(css/jquery.fancybox.min.css);
+@import url(css/jquery-ui.css);
+@import url(css/nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333333;
+    /* Gris oscuro para texto principal */
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    background-color: #FFFFFF;
+    /* Fondo general blanco */
+}
+
+a {
+    color: #121212;
+    /* Negro suave para enlaces */
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #121212;
+    /* Negro suave para encabezados */
+    margin: 0
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #121212;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+button:focus {
+    outline: none;
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+p {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
+    /* Gris oscuro para párrafos */
+}
+
+a {
+    color: #121212;
+    text-decoration: none;
+    outline: none !important;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ :focus {
+    outline: 0;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #BDBDBD;
+    /* Borde gris claro */
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #4F4F4F;
+    /* Gris medio */
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #DAA520 !important;
+    /* Borde dorado al enfocar */
+    box-shadow: 0 0 0 .2rem rgba(218, 165, 32, .25);
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+    border-left: 3px solid #DAA520;
+    /* Borde dorado */
+    background-color: #FDFBF6;
+    /* Fondo crema muy claro */
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.full {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+/**-- heading section --**/
+
+
+/*---------------------------- preloader area ----------------------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    width: 280px;
+}
+
+
+/*-- header area --*/
+
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+
+
+/*-- navigation--*/
+
+.navigation.navbar {
+    float: right;
+    background: #FFFFFF;
+    /* Fondo blanco para la barra de navegación */
+    clear: both;
+    padding: 23px 25px !important;
+    border-radius: 64px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: #121212;
+    /* Texto negro suave */
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+    color: #DAA520;
+    /* Dorado al pasar el mouse/enfocar */
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+    color: #DAA520;
+    /* Dorado para el enlace activo */
+}
+
+.navbar-expand-md .navbar-nav {
+    padding-right: 10px;
+}
+
+.login_btn a {
+    background: #DAA520;
+    /* Fondo dorado */
+    padding: 9px 32px !important;
+    display: inline;
+    border-radius: 20px;
+    color: #121212 !important;
+    /* Texto negro sobre dorado */
+    margin: 0 10px;
+}
+
+.login_btn a:hover {
+    background: #B8860B !important;
+    /* Dorado más oscuro al pasar el mouse */
+    color: #FFFFFF !important;
+}
+
+.sea_icon a {
+    color: #333333 !important;
+    /* Icono de búsqueda gris oscuro */
+}
+
+.header {
+    width: 100%;
+    padding: 30px 30px;
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    border-top: #121212 solid 11px;
+    /* Borde superior negro */
+}
+
+.logo {
+    padding-top: 14px;
+}
+
+
+/** banner section **/
+
+.banner_main {
+    background: #FDFBF6;
+    /* Fondo crema muy claro para el banner */
+    padding: 198px 0px 90px 0px;
+}
+
+.text-bg {
+    text-align: center;
+}
+
+.text-bg h1 {
+    color: #121212;
+    /* Texto del banner negro suave */
+    font-size: 60px;
+    line-height: 76px;
+    padding-bottom: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text-bg .read_more {
+    border: #DAA520 solid 2px;
+    /* Borde dorado */
+    color: #DAA520 !important;
+    /* Texto dorado */
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+
+.text-bg .read_more:hover {
+    background: #DAA520;
+    /* Fondo dorado al pasar el mouse */
+    color: #121212 !important;
+    /* Texto negro */
+}
+
+#banner1 .carousel-caption {
+    position: inherit;
+    padding: 0;
+}
+
+#banner1 .carousel-indicators {
+    display: none;
+}
+
+#banner1 .carousel-control-prev,
+#banner1 .carousel-control-next {
+    width: 62px;
+    height: 60px;
+    background: transparent;
+    border: #121212 solid 2px;
+    /* Borde de control negro */
+    opacity: 1;
+    font-size: 30px;
+    color: #121212;
+    /* Color de control negro */
+    border-radius: 60px;
+    top: 43%;
+}
+
+#banner1 .carousel-control-prev:hover,
+#banner1 .carousel-control-next:hover,
+#banner1 .carousel-control-prev:focus,
+#banner1 .carousel-control-next:focus {
+    background: transparent;
+    border: #DAA520 solid 2px;
+    /* Borde dorado al pasar el mouse */
+    color: #DAA520;
+    /* Color dorado al pasar el mouse */
+}
+
+#banner1 a.carousel-control-prev {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+
+#banner1 a.carousel-control-next {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+
+/** end banner section **/
+
+.titlepage h2 {
+    font-size: 35px;
+    color: #121212;
+    /* Títulos de sección negros */
+    line-height: 45px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.read_more {
+    font-size: 17px;
+    background-color: transparent;
+    border: #121212 solid 2px;
+    /* Borde negro por defecto */
+    color: #121212;
+    /* Texto negro */
+    padding: 15px 0px;
+    width: 100%;
+    max-width: 222px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+.read_more:hover {
+    background: #DAA520;
+    /* Fondo dorado al pasar el mouse */
+    color: #121212 !important;
+    /* Texto negro */
+    border-color: #DAA520;
+    /* Borde dorado */
+    transition: ease-in all 0.5s;
+}
+
+
+/** about section **/
+
+.about {
+    border-bottom: #D3D3D3 solid 1px;
+    /* Borde inferior gris claro */
+    padding: 130px 0 90px 0;
+    background-color: #FFFFFF;
+    /* Fondo blanco */
+}
+
+.about .about_img {
+    margin-left: -40px;
+}
+
+.about .titlepage::before {
+    /* Considerar si este elemento gráfico se ajusta a la nueva estética o si se debe modificar/eliminar */
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 411px;
+    right: -30px;
+    background: url(../images/about_right_cross.jpg);
+    /* Mantener si es neutral o ajustar */
+    background-repeat: no-repeat;
+    top: -27px;
+    z-index: -1;
+}
+
+.about .about_img figure {
+    margin: 0;
+}
+
+.about .titlepage {
+    border: #DAA520 solid 1px;
+    /* Borde dorado */
+    padding: 40px 40px;
+    z-index: 10018;
+    background: #FFFFFF;
+    /* Fondo blanco */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Sombra sutil */
+}
+
+.about .titlepage p {
+    color: #333333;
+    font-size: 17px;
+    line-height: 35px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.about .read_more {
+    border: #DAA520 solid 2px;
+    /* Borde dorado */
+    color: #DAA520;
+    /* Texto dorado */
+    font-weight: 500;
+    margin-top: 44px;
+}
+
+.about .read_more:hover {
+    background: #DAA520;
+    color: #121212 !important;
+}
+
+
+/** end about section **/
+
+
+/** Our  Glasses section **/
+
+.glasses {
+    background: #FDFBF6;
+    /* Fondo crema muy claro */
+    margin-top: 90px;
+    padding-top: 60px;
+    /* Añadido padding para espaciar */
+    padding-bottom: 60px;
+    /* Añadido padding para espaciar */
+}
+
+.glasses .titlepage {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.glasses .titlepage p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+    color: #333333;
+}
+
+.blu {
+    /* Clase renombrada mentalmente a "accent-color" */
+    color: #DAA520;
+    /* Dorado */
+    text-transform: initial;
+}
+
+.glasses .glasses_box {
+    text-align: center;
+    border: #D3D3D3 solid 1px;
+    /* Borde gris claro */
+    border-radius: 4px;
+    /* Bordes ligeramente redondeados */
+    padding: 40px 20px 30px 20px;
+    /* Ajuste de padding */
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    /* Fondo blanco para las cajas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.glasses .glasses_box figure {
+    margin: 0;
+    margin-bottom: 20px;
+    /* Espacio debajo de la imagen */
+}
+
+.glasses .glasses_box figure img {
+    /* Asegurar que la imagen no desborde el padding */
+    max-height: 200px;
+    /* Limitar altura si es necesario */
+    object-fit: contain;
+}
+
+.glasses .glasses_box h3 {
+    color: #121212;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 20px 0px 9px 0px;
+    /* Ajuste de padding */
+}
+
+.glasses .glasses_box p {
+    color: #333333;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.glasses .read_more {
+    border: #DAA520 solid 2px;
+    color: #DAA520;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+
+.glasses .read_more:hover {
+    background: #DAA520;
+    color: #121212 !important;
+}
+
+
+/** end Our  Glasses section **/
+
+
+/** Our shop section **/
+
+.shop {
+    margin-top: 90px;
+    background: #FFFFFF;
+    /* Fondo blanco */
+    border-top: #ECECEC solid 1px;
+    border-bottom: #ECECEC solid 1px;
+}
+
+.shop .shop_img figure {
+    margin: 0;
+}
+
+.shop .shop_img figure img {
+    width: 100%;
+}
+
+.padding_right0 {
+    padding-right: 0;
+}
+
+.shop .max_width {
+    text-align: left;
+    background: #121212;
+    /* Fondo negro suave */
+    height: 100%;
+    padding-top: 86px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* Añadido padding derecho */
+    padding-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    /* Centrar contenido verticalmente */
+}
+
+.shop .titlepage {
+    max-width: 612px;
+    width: 100%;
+    float: left;
+}
+
+.shop .titlepage h2 {
+    color: #DAA520;
+    /* Título dorado sobre fondo oscuro */
+    border-bottom: #DAA520 solid 1px;
+    /* Borde inferior dorado */
+    padding-bottom: 10px;
+    float: left;
+    clear: both;
+}
+
+.shop .titlepage p {
+    color: #E0E0E0;
+    /* Texto gris claro sobre fondo oscuro */
+    font-size: 17px;
+    line-height: 30px;
+    padding: 40px 0px 80px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.shop .titlepage .read_more {
+    color: #DAA520 !important;
+    /* Texto dorado */
+    border-color: #DAA520;
+    /* Borde dorado */
+}
+
+.shop .titlepage .read_more:hover {
+    background: #DAA520;
+    color: #121212 !important;
+}
+
+
+/** end Our shop section **/
+
+
+/** clients section **/
+
+.clients {
+    padding: 90px 0 70px 0;
+    background-color: #FDFBF6;
+    /* Fondo crema muy claro */
+}
+
+.clients .titlepage {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.clients .titlepage p {
+    color: #333333;
+    font-size: 17px;
+    line-height: 29px;
+    padding-top: 10px;
+}
+
+.clients_box h3 {
+    color: #121212;
+    font-size: 26px;
+    line-height: 30px;
+    padding-top: 23px;
+    font-weight: 600;
+}
+
+.clients_box p {
+    color: #333333;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.clients_Carousel .carousel-caption {
+    position: inherit;
+    padding: 0;
+}
+
+.clients_box {
+    border: #D3D3D3 solid 1px;
+    /* Borde gris claro */
+    padding: 40px 32px 40px 0px;
+    float: left;
+    text-align: left;
+    margin-left: 89px;
+    background-color: #FFFFFF;
+    /* Fondo blanco para las cajas de cliente */
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.clients_box figure {
+    margin: 0;
+    float: left;
+    margin-left: -102px;
+    padding-right: 30px;
+}
+
+.clients_box figure img {
+    border-radius: 50%;
+    /* Imágenes de cliente redondas */
+}
+
+#myCarousel .carousel-indicators {
+    bottom: -70px;
+}
+
+#myCarousel .carousel-indicators li {
+    width: 15px;
+    /* Ajuste de tamaño */
+    height: 15px;
+    /* Ajuste de tamaño */
+    border-radius: 50%;
+    background: #BDBDBD;
+    /* Indicadores inactivos gris claro */
+    border: 1px solid #BDBDBD;
+}
+
+#myCarousel .carousel-indicators .active {
+    background: #DAA520;
+    /* Indicador activo dorado */
+    border-color: #DAA520;
+}
+
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+    display: none;
+}
+
+
+/** end clients section **/
+
+
+/** contact section **/
+
+.contact {
+    margin-top: 90px;
+    padding-bottom: 90px;
+    /* Añadido padding inferior */
+}
+
+.contact .main_form h3 {
+    color: #121212;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 30px;
+    /* Espacio debajo del título */
+}
+
+#map {
+    height: 100%;
+    min-height: 732px;
+}
+
+.main_form {
+    position: absolute;
+    z-index: 999;
+    background: #fff;
+    padding: 40px 50px;
+    margin-top: 107px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    /* Sombra para el formulario */
+    border-radius: 5px;
+}
+
+.main_form .contactus {
+    border-bottom: #BDBDBD solid 1px;
+    /* Borde inferior gris claro */
+    margin-bottom: 25px;
+    width: 100%;
+    height: 57px;
+    background: transparent;
+    color: #333333;
+    /* Color de texto del input */
+    font-size: 18px;
+    font-weight: normal;
+    border-top: inherit;
+    border-left: inherit;
+    border-right: inherit;
+}
+
+.main_form .contactusmess {
+    border-bottom: #BDBDBD solid 1px;
+    /* Borde inferior gris claro */
+    margin-bottom: 25px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 14px;
+    background: transparent;
+    color: #333333;
+    /* Color de texto del textarea */
+    font-size: 18px;
+    font-weight: normal;
+    border-top: inherit;
+    border-left: inherit;
+    border-right: inherit;
+}
+
+.send_btn {
+    background: #DAA520;
+    /* Botón de envío dorado */
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    color: #121212;
+    /* Texto negro */
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: ease-in all 0.5s;
+    text-transform: uppercase;
+}
+
+.send_btn:hover {
+    background: #B8860B;
+    /* Dorado más oscuro al pasar el mouse */
+    color: #FFFFFF;
+    transition: ease-in all 0.5s;
+}
+
+#request *::placeholder {
+    color: #757575;
+    /* Placeholder gris medio */
+    opacity: 1;
+}
+
+
+/** end contact section **/
+
+
+/** footer **/
+
+.footer {
+    background: #121212;
+    /* Fondo del footer negro suave */
+    padding-top: 90px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul.location_icon {
+    text-align: center;
+}
+
+ul.location_icon li {
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    color: #E0E0E0;
+    /* Texto gris claro */
+    text-align: center;
+    padding: 0 40px;
+}
+
+ul.location_icon li a {
+    font-size: 40px;
+    color: #DAA520;
+    /* Iconos dorados */
+    line-height: 30px;
+    display: block;
+}
+
+ul.location_icon li a:hover {
+    color: #FFD700;
+    /* Dorado más brillante al pasar el mouse */
+}
+
+.copyright {
+    margin-top: 80px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    /* Fondo del copyright blanco */
+}
+
+.copyright p {
+    color: #333333;
+    /* Texto del copyright gris oscuro */
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: normal;
+}
+
+.copyright a {
+    color: #333333;
+}
+
+.copyright a:hover {
+    color: #DAA520;
+    /* Enlace dorado al pasar el mouse */
+}
+
+
+/** end footer **/
+
+
+/** inner page css **/
+
+.position_head .header {
+    position: inherit;
+    background: #121212;
+    /* Fondo del header en páginas interiores negro */
+    border-top-color: #DAA520;
+    /* Borde superior dorado */
+}
+
+
+/* Ajustar colores de navegación para header oscuro en páginas interiores */
+
+.position_head .navigation.navbar-dark .navbar-nav .nav-link {
+    color: #121212;
+    /* Cambiado a negro para contraste con fondo blanco de navbar */
+}
+
+.position_head .navigation.navbar-dark .navbar-nav .nav-link:focus,
+.position_head .navigation.navbar-dark .navbar-nav .nav-link:hover {
+    color: #DAA520;
+    /* Dorado al pasar el mouse/enfocar */
+}
+
+.position_head .navigation.navbar-dark .navbar-nav .active>.nav-link,
+.position_head .navigation.navbar-dark .navbar-nav .nav-link.active,
+.position_head .navigation.navbar-dark .navbar-nav .nav-link.show,
+.position_head .navigation.navbar-dark .navbar-nav .show>.nav-link {
+    color: #DAA520;
+    /* Enlace activo dorado */
+}
+
+.position_head .login_btn a {
+    background: #DAA520;
+    /* Botón login dorado */
+    color: #121212 !important;
+    /* Texto negro */
+}
+
+.position_head .login_btn a:hover {
+    background: #B8860B !important;
+    /* Dorado oscuro al pasar el mouse */
+    color: #FFFFFF !important;
+}
+
+.position_head .sea_icon a {
+    color: #FFFFFF !important;
+    /* Icono de búsqueda blanco */
+}
+
+.position_head .glasses,
+.position_head .shop {
+    /* Asegurar que .shop también tenga este margen si es una página interior */
+    margin-bottom: 90px;
+}
